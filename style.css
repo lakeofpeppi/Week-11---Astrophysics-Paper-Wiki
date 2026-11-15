@@ -82,6 +82,14 @@ p + p { margin-top: 12px; }
 .hero { padding: 70px 0 50px; }
 .hero h1 { font-size: clamp(2.6rem, 7vw, 5rem); font-weight: 700; max-width: 14ch; }
 .hero p { color: var(--muted); max-width: 58ch; margin-top: 20px; font-size: 1.1rem; }
+/* .hero .tagline beats .hero p because two classes win over class + tag, so no !important needed */
+.hero .tagline {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.3rem, 2.6vw, 1.75rem);
+  font-weight: 500;
+  color: var(--text);
+  margin-top: 14px;
+}
 .stats { display: flex; gap: 14px; margin-top: 32px; flex-wrap: wrap; }
 .stat {
   border: 1px solid var(--line);
