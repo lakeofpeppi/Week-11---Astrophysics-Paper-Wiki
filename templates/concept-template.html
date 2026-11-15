@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{CONCEPT_NAME}} · Astro Paper Wiki</title>
+  <meta name="description" content="{{ONE_LINE_DEFINITION}}">
+  <!-- preconnect first or the fonts pop in late and the page jumps -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- prefix is "" on the home page and "../" inside papers/ and concepts/, don't hardcode it -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="orbs" aria-hidden="true"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="../index.html">Astro Paper Wiki <span>/ notes from the seminar</span></a>
+      <nav>
+        <a href="../index.html#papers">Papers</a>
+        <a href="../index.html#concepts">Concepts</a>
+        <a href="../index.html#how">How it works</a>
+      </nav>
+    </header>
+
+    <main class="article">
+      <!-- copy this file to concepts/<concept-name>.html, then replace every {{...}} -->
+      <a class="crumb" href="../index.html#concepts">← all concepts</a>
+      <!-- keep this count in sync with the number of rows in "appears in" -->
+      <p class="kicker">concept · used in {{N}} paper(s)</p>
+      <h1>{{CONCEPT_NAME}}</h1>
+      <p class="byline">{{ONE_LINE_DEFINITION}}</p>
+
+      <div class="block"><h2>Plain explanation</h2><p>{{3_TO_6_SENTENCES_ZERO_ASTRO_BACKGROUND}}</p>
+        <div class="analogy"><b>Analogy:</b> {{ONE_EVERYDAY_ANALOGY}}</div>
+      </div>
+      <div class="block"><h2>Why astronomers care</h2><ul><li>{{2_TO_3_BULLETS}}</li></ul></div>
+      <div class="block"><h2>Appears in</h2>
+        <div class="table-wrap"><table><thead><tr><th>Paper</th><th>How this paper uses it</th></tr></thead><tbody>
+          <!-- new papers get a NEW row here, never rewrite or delete old rows -->
+          <tr><td><a href="../papers/{{paper-file}}.html">{{Paper Title}}</a></td><td>{{HOW_THIS_PAPER_USES_IT (Sec. x)}}</td></tr>
+        </tbody></table></div>
+      </div>
+      <!-- only add this block when two papers disagree, otherwise delete it -->
+      <div class="block verify"><h2>Conflicting findings</h2><ul><li>{{PAPER_A says X, PAPER_B says Y (where)}}</li></ul></div>
+      <div class="block"><h2>Related concepts</h2><div class="chips"><a class="chip" href="../concepts/{{slug}}.html">{{Name}}</a></div></div>
+    </main>
+    <footer>
+      <a class="crumb" href="../index.html">← back to home</a>
+      <span></span>
+    </footer>
+  </div>
+</body>
+</html>

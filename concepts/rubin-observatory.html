@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rubin Observatory · Astro Paper Wiki</title>
+  <meta name="description" content="The Vera C. Rubin Observatory: a large survey telescope in Chile that photographs the whole southern sky every few nights.">
+  <!-- preconnect first or the fonts pop in late and the page jumps -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- prefix is "" on the home page and "../" inside papers/ and concepts/, don't hardcode it -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="orbs" aria-hidden="true"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="../index.html">Astro Paper Wiki <span>/ notes from the seminar</span></a>
+      <nav>
+        <a href="../index.html#papers">Papers</a>
+        <a href="../index.html#concepts">Concepts</a>
+        <a href="../index.html#how">How it works</a>
+      </nav>
+    </header>
+
+    <main class="article">
+      <a class="crumb" href="../index.html#concepts">← all concepts</a>
+      <p class="kicker">concept · used in 1 paper</p>
+      <h1>Rubin Observatory</h1>
+      <p class="byline">The Vera C. Rubin Observatory: a large survey telescope in Chile that photographs the whole southern sky every few nights.</p>
+
+      <div class="block"><h2>Plain explanation</h2><p>Rubin uses an 8.4 m telescope and a huge camera to repeatedly scan the sky. Over ten years it builds a time-lapse movie of the universe (the LSST survey).</p><p>Because it's so sensitive and images such a wide area, satellite streaks are a big worry for its data.</p>
+        <div class="analogy"><b>Analogy:</b> A security camera for the entire sky, so anything bright that flies past ends up on the footage.</div>
+      </div>
+      <div class="block"><h2>Why astronomers care</h2><ul><li>Satellite streaks can ruin pixels or fake real signals.</li><li>It's a benchmark for asking whether a satellite is bright enough to matter for astronomy.</li></ul></div>
+      <div class="block"><h2>Appears in</h2>
+        <div class="table-wrap"><table><thead><tr><th>Paper</th><th>How this paper uses it</th></tr></thead><tbody><tr><td><a href="../papers/2026-caddy-moonlit-satellites.html">The First Observations of Moonlit Satellites</a></td><td>Rubin's 15 s detection limit (23.13 mag/arcsec²) is far brighter than the moonlit ISS streak (35.78 mag/arcsec²), so moonlit satellites wouldn't show up (Sec. 4.3, Fig. 13).</td></tr></tbody></table></div>
+      </div>
+      
+      <div class="block"><h2>Related concepts</h2><div class="chips"><a class="chip" href="../concepts/low-earth-orbit.html">Low Earth orbit</a><a class="chip" href="../concepts/surface-brightness.html">Surface brightness</a></div></div>
+    </main>
+    <footer>
+      <a class="crumb" href="../index.html">← back to home</a>
+      <span></span>
+    </footer>
+  </div>
+</body>
+</html>

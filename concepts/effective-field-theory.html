@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Effective field theory · Astro Paper Wiki</title>
+  <meta name="description" content="A way to describe physics using only the terms that matter at the scales you can measure.">
+  <!-- preconnect first or the fonts pop in late and the page jumps -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- prefix is "" on the home page and "../" inside papers/ and concepts/, don't hardcode it -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="orbs" aria-hidden="true"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="../index.html">Astro Paper Wiki <span>/ notes from the seminar</span></a>
+      <nav>
+        <a href="../index.html#papers">Papers</a>
+        <a href="../index.html#concepts">Concepts</a>
+        <a href="../index.html#how">How it works</a>
+      </nav>
+    </header>
+
+    <main class="article">
+      <a class="crumb" href="../index.html#concepts">← all concepts</a>
+      <p class="kicker">concept · used in 1 paper</p>
+      <h1>Effective field theory</h1>
+      <p class="byline">A way to describe physics using only the terms that matter at the scales you can measure.</p>
+
+      <div class="block"><h2>Plain explanation</h2><p>Instead of guessing the one true theory, you write down <b>every term allowed by the symmetries</b>, each with an unknown coefficient. Measurements then tell you the size of each coefficient.</p><p>For dark energy, this means you can test whole families of models at once. A coefficient like M₂⁴ controls one specific behaviour (here, how the field moves, its kinetic term).</p>
+        <div class="analogy"><b>Analogy:</b> Like fitting a model's weights in ML without knowing the true data-generating process. Or like describing water with density and viscosity without tracking every molecule.</div>
+      </div>
+      <div class="block"><h2>Why astronomers care</h2><ul><li>It's model-independent, so one measurement constrains many theories at once.</li><li>The coefficient values hint at what deeper (UV-complete) theory might be underneath.</li></ul></div>
+      <div class="block"><h2>Appears in</h2>
+        <div class="table-wrap"><table><thead><tr><th>Paper</th><th>How this paper uses it</th></tr></thead><tbody><tr><td><a href="../papers/2026-gurrola-dark-energy-moon.html">Probing Dark Energy on the Moon</a></td><td>Uses the EFT of dark energy and focuses on the kinetic coefficient M₂⁴, linked to the sound speed by Eq. 2 (Eqs. 1–3).</td></tr></tbody></table></div>
+      </div>
+      
+      <div class="block"><h2>Related concepts</h2><div class="chips"><a class="chip" href="../concepts/dark-energy.html">Dark energy</a><a class="chip" href="../concepts/sound-speed.html">Sound speed (of dark energy)</a></div></div>
+    </main>
+    <footer>
+      <a class="crumb" href="../index.html">← back to home</a>
+      <span></span>
+    </footer>
+  </div>
+</body>
+</html>

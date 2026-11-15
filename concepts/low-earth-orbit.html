@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Low Earth orbit · Astro Paper Wiki</title>
+  <meta name="description" content="Orbits close to Earth, below about 2,000 km. Home of the ISS and most satellite constellations.">
+  <!-- preconnect first or the fonts pop in late and the page jumps -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- prefix is "" on the home page and "../" inside papers/ and concepts/, don't hardcode it -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="orbs" aria-hidden="true"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="../index.html">Astro Paper Wiki <span>/ notes from the seminar</span></a>
+      <nav>
+        <a href="../index.html#papers">Papers</a>
+        <a href="../index.html#concepts">Concepts</a>
+        <a href="../index.html#how">How it works</a>
+      </nav>
+    </header>
+
+    <main class="article">
+      <a class="crumb" href="../index.html#concepts">← all concepts</a>
+      <p class="kicker">concept · used in 1 paper</p>
+      <h1>Low Earth orbit</h1>
+      <p class="byline">Orbits close to Earth, below about 2,000 km. Home of the ISS and most satellite constellations.</p>
+
+      <div class="block"><h2>Plain explanation</h2><p>Satellites in low Earth orbit (LEO) circle Earth roughly every 90 minutes. The ISS flies at about 400 km.</p><p>From the ground they're usually only visible around <b>twilight</b>: the satellite is still in sunlight, but your sky is already dark. Tracking them is part of <b>space domain awareness</b> (SDA), knowing what's up there and where.</p>
+        <div class="analogy"><b>Analogy:</b> The busy inner ring road around a city: lots of traffic, moving fast, close to home.</div>
+      </div>
+      <div class="block"><h2>Why astronomers care</h2><ul><li>LEO is getting crowded (Starlink, OneWeb, BlueBird…), which raises collision and tracking concerns.</li><li>Bright satellites leave streaks across astronomy images.</li></ul></div>
+      <div class="block"><h2>Appears in</h2>
+        <div class="table-wrap"><table><thead><tr><th>Paper</th><th>How this paper uses it</th></tr></thead><tbody><tr><td><a href="../papers/2026-caddy-moonlit-satellites.html">The First Observations of Moonlit Satellites</a></td><td>Targets the ISS and the Chinese Space Station, tracked with TLE orbit data from CelesTrak (Sec. 2.1), and discusses future constellations and orbital data centres (Sec. 4).</td></tr></tbody></table></div>
+      </div>
+      
+      <div class="block"><h2>Related concepts</h2><div class="chips"><a class="chip" href="../concepts/apparent-magnitude.html">Apparent magnitude</a><a class="chip" href="../concepts/brdf.html">BRDF</a><a class="chip" href="../concepts/rubin-observatory.html">Rubin Observatory</a></div></div>
+    </main>
+    <footer>
+      <a class="crumb" href="../index.html">← back to home</a>
+      <span></span>
+    </footer>
+  </div>
+</body>
+</html>

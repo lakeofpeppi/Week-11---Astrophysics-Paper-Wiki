@@ -1,0 +1,8 @@
+# log.md
+
+Every change to the wiki, one line each, newest at the bottom.
+Format: `YYYY-MM-DD | action | file(s) | notes`
+
+2026-11-15 | setup | CLAUDE.md, style.css, templates/, index.html | first version of rules and design
+2026-11-15 | ingest | papers/2026-caddy-moonlit-satellites.html | +7 concepts (moon, lunar-earthshine, low-earth-orbit, apparent-magnitude, surface-brightness, brdf, rubin-observatory); 3 items flagged to verify
+2026-11-15 | ingest | papers/2026-gurrola-dark-energy-moon.html | +5 concepts (lila, dark-energy, effective-field-theory, sound-speed, fisher-matrix), 1 updated (moon, new "appears in" row); 3 items flagged to verify

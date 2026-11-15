@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The First Observations of Moonlit Satellites · Astro Paper Wiki</title>
+  <meta name="description" content="Large satellites like the ISS can still be seen and measured at night when the only light hitting them comes from the Moon. They're about 13 magnitudes fainter than in daylight, but a 0.6 m telescope can still detect them.">
+  <!-- preconnect first or the fonts pop in late and the page jumps -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- prefix is "" on the home page and "../" inside papers/ and concepts/, don't hardcode it -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="orbs" aria-hidden="true"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="../index.html">Astro Paper Wiki <span>/ notes from the seminar</span></a>
+      <nav>
+        <a href="../index.html#papers">Papers</a>
+        <a href="../index.html#concepts">Concepts</a>
+        <a href="../index.html#how">How it works</a>
+      </nav>
+    </header>
+
+    <main class="article">
+      <a class="crumb" href="../index.html#papers">← all papers</a>
+      <p class="kicker">paper · arXiv:2609.07057</p>
+      <h1>The First Observations of Moonlit Satellites</h1>
+      <p class="byline">Sarah E. Caddy et al. · <a href="https://arxiv.org/abs/2609.07057" target="_blank" rel="noopener">arXiv:2609.07057 ↗</a></p>
+      <div class="chips"><span class="chip tag observational">observational</span><span class="chip tag satellites">satellites</span></div>
+
+      <div class="tldr"><b>TL;DR</b>Large satellites like the ISS can still be seen and measured at night when the only light hitting them comes from the Moon. They're about 13 magnitudes fainter than in daylight, but a 0.6 m telescope can still detect them.</div>
+
+      <div class="block"><h2>Research question</h2><p>Satellites are usually only watched from the ground around twilight, when they're sunlit but the sky is dark. The authors asked whether big satellites in low Earth orbit can also be seen in the middle of the night, lit only by moonlight and by moonlight bouncing off Earth (Lunar-Earthshine). If so, how bright are they, and what does that mean for tracking satellites and for astronomy?</p></div>
+      <div class="block"><h2>Data &amp; tools</h2><ul><li>24-inch (0.6 m) PlaneWave CDK24 telescope, Macquarie University Observatory, Sydney (Sec. 2.1, Fig. 3)</li><li>ZWO ASI6200MM Pro camera, 31.0 × 20.7 arcmin field, no photometric filters (Sec. 2.1)</li><li>Targets: International Space Station (ISS) and Chinese Space Station (CSS) (Sec. 2.1)</li><li>Observed 8–12 June 2025, around full Moon (Sec. 2.1)</li><li>Orbits from TLEs on CelesTrak; star brightness reference from the APASS DR9 catalogue (Sec. 2.1–2.2)</li><li>Software: the <span class="mono">lumos-sat</span> brightness model and Ansys STK simulations (Sec. 2.3–3.3)</li></ul></div>
+      <div class="block"><h2>Method</h2><ol><li>Track every ISS pass above 40° altitude during full-Moon nights. All of them were detected (Sec. 2.1).</li><li>Calibrate the camera against 321 known stars so pixel counts turn into real magnitudes (Sec. 2.2, Eq. 2).</li><li>Extend the <span class="mono">lumos-sat</span> model so it includes moonlight and Lunar-Earthshine, not just sunlight (Sec. 2.3.2–2.4, Eq. 22).</li><li>Compare the model with the 147 night-time measurements, and with a full 3D ISS simulation in STK (Sec. 3.2–3.3).</li><li>Use the model to ask bigger questions: how many hours or days per month a satellite is trackable, and whether moonlit satellites would show up in Rubin Observatory images (Sec. 4).</li></ol></div>
+      <div class="block"><h2>Key results</h2>
+        <div class="table-wrap"><table><thead><tr><th>Result</th><th>Value</th><th>Where in paper</th></tr></thead><tbody><tr><td>ISS median brightness at night</td><td>V = 12.02 ± 0.17 mag</td><td class="where">Table 2</td></tr><tr><td>ISS median brightness in daylight</td><td>V = −1.10 ± 0.05 mag</td><td class="where">Table 2</td></tr><tr><td>How much fainter at night than day</td><td>13.12 ± 1.30 mag</td><td class="where">Sec. 3.1</td></tr><tr><td>CSS, one pass at 99% Moon</td><td>peak 12.94, median 13.42 mag</td><td class="where">Table 3</td></tr><tr><td>Model vs. observations (residual)</td><td>0.03 ± 0.80 mag</td><td class="where">Sec. 3.2</td></tr><tr><td>Signal-to-noise, starlight only → with Lunar-Earthshine</td><td>0.575 → 467</td><td class="where">Table 4</td></tr><tr><td>Time the ISS is observable near full Moon</td><td>~100% of 24 h (vs. ~54% for day + twilight)</td><td class="where">Sec. 4.1</td></tr><tr><td>Max nights per month detectable at midnight</td><td>11 of 30</td><td class="where">Sec. 4.2, Fig. 12</td></tr><tr><td>Rubin 15 s limit vs. moonlit ISS</td><td>23.13 vs. 35.78 mag/arcsec² (not detected)</td><td class="where">Sec. 4.3, Fig. 13</td></tr></tbody></table></div>
+      </div>
+      <div class="block"><h2>Conclusions</h2><ul><li>Moonlit satellites can be observed and measured. This is the first time it has been shown.</li><li>Lunar-Earthshine is a real light source: it brightens Earth-facing parts of a satellite a lot.</li><li>Near full Moon, big satellites could be tracked almost around the clock, which helps space domain awareness.</li><li>Moonlit satellites are too faint to seriously hurt Rubin Observatory science, even very large future ones.</li></ul></div>
+      <div class="block"><h2>Limitations</h2><ul><li>No colour filters, so the authors had to assume the satellites have a Sun-like colour (B−V = 0.65) (Sec. 2.2).</li><li>Only one site, one ISS model and full-Moon nights (91–100% illuminated) (Sec. 3.1).</li><li>The dome tracks in steps, so some images may be partly blocked. Magnitudes are treated as lower limits (Sec. 2.1).</li><li>The model leaves out Rayleigh scattering and uses generic Earth reflection settings (Sec. 2.3.2, 2.4).</li><li>The BlueBird satellite's reflection model (Lambertian) is not verified (Sec. 4.2).</li></ul></div>
+      <div class="block verify"><h2>To verify</h2><ul><li>ISS surface brightness is given as 20.60 mag/arcsec² in Sec. 3.1 but 19.70 ± 1.00 in Sec. 4.3.</li><li>The abstract says Earth-facing parts get “at least 100 times” brighter. Sec. 3.3 gives ~93× for solar panels and ~240× for the radiators.</li><li>Observations are from June 2025, but the paper cites events up to July 2026. Check the submission date on arXiv.</li></ul></div>
+      <div class="block"><h2>Concepts in this paper</h2><div class="chips"><a class="chip" href="../concepts/apparent-magnitude.html">Apparent magnitude</a><a class="chip" href="../concepts/brdf.html">BRDF</a><a class="chip" href="../concepts/low-earth-orbit.html">Low Earth orbit</a><a class="chip" href="../concepts/lunar-earthshine.html">Lunar-Earthshine</a><a class="chip" href="../concepts/rubin-observatory.html">Rubin Observatory</a><a class="chip" href="../concepts/surface-brightness.html">Surface brightness</a><a class="chip" href="../concepts/moon.html">The Moon</a></div></div>
+      <div class="block"><h2>My seminar questions</h2><ol><li>Without filters, how much could the assumed Sun-like colour (B−V = 0.65) shift your measured magnitudes?</li><li>Would Lunar-Earthshine matter even more for big flat Earth-facing satellites like BlueBird than for the ISS?</li><li>All data is from full-Moon nights at one site. How would the trackable hours change at quarter Moon?</li></ol></div>
+    </main>
+    <footer>
+      <a class="crumb" href="../index.html">← back to home</a>
+      <span>added on 2026-11-15</span>
+    </footer>
+  </div>
+</body>
+</html>

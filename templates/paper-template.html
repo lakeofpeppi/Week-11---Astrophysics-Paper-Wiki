@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}} · Astro Paper Wiki</title>
+  <meta name="description" content="{{TLDR}}">
+  <!-- preconnect first or the fonts pop in late and the page jumps -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- prefix is "" on the home page and "../" inside papers/ and concepts/, don't hardcode it -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="orbs" aria-hidden="true"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="../index.html">Astro Paper Wiki <span>/ notes from the seminar</span></a>
+      <nav>
+        <a href="../index.html#papers">Papers</a>
+        <a href="../index.html#concepts">Concepts</a>
+        <a href="../index.html#how">How it works</a>
+      </nav>
+    </header>
+
+    <main class="article">
+      <!-- copy this file to papers/<year>-<first-author>-<topic>.html, then replace every {{...}} -->
+      <a class="crumb" href="../index.html#papers">← all papers</a>
+      <p class="kicker">paper · arXiv:{{ARXIV_ID}}</p>
+      <h1>{{TITLE}}</h1>
+      <p class="byline">{{FIRST_AUTHOR}} et al. · <a href="https://arxiv.org/abs/{{ARXIV_ID}}" target="_blank" rel="noopener">arXiv:{{ARXIV_ID}} ↗</a></p>
+      <!-- tags: observational / satellites / theory / cosmology / instrumentation, the class must match the word -->
+      <div class="chips"><span class="chip tag {{TAG}}">{{TAG}}</span></div>
+
+      <div class="tldr"><b>TL;DR</b>{{ONE_SENTENCE_FOR_A_CS_STUDENT}}</div>
+
+      <div class="block"><h2>Research question</h2><p>{{2_TO_3_SENTENCES}}</p></div>
+      <div class="block"><h2>Data &amp; tools</h2><ul><li>{{TELESCOPE_INSTRUMENT_DATASET_SOFTWARE (Sec. x)}}</li></ul></div>
+      <div class="block"><h2>Method</h2><ol><li>{{STEP — max 6}}</li></ol></div>
+      <div class="block"><h2>Key results</h2>
+        <div class="table-wrap"><table><thead><tr><th>Result</th><th>Value</th><th>Where in paper</th></tr></thead><tbody>
+          <!-- every number needs a where, if you can't find it don't put the number -->
+          <tr><td>{{RESULT}}</td><td>{{VALUE}}</td><td class="where">{{Sec. / Fig. / Table}}</td></tr>
+        </tbody></table></div>
+      </div>
+      <div class="block"><h2>Conclusions</h2><ul><li>{{max 4}}</li></ul></div>
+      <div class="block"><h2>Limitations</h2><ul><li>{{max 5}}</li></ul></div>
+      <div class="block verify"><h2>To verify</h2><ul><li>{{INCONSISTENT_OR_UNCLEAR — or write <p>nothing flagged</p>}}</li></ul></div>
+      <div class="block"><h2>Concepts in this paper</h2><div class="chips"><a class="chip" href="../concepts/{{concept-slug}}.html">{{Concept Name}}</a></div></div>
+      <div class="block"><h2>My seminar questions</h2><ol><li>{{QUESTION 1}}</li><li>{{QUESTION 2}}</li><li>{{QUESTION 3}}</li></ol></div>
+    </main>
+    <footer>
+      <a class="crumb" href="../index.html">← back to home</a>
+      <span>added on {{YYYY-MM-DD}}</span>
+    </footer>
+  </div>
+</body>
+</html>

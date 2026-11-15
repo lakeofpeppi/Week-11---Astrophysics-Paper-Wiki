@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Probing Dark Energy on the Moon · Astro Paper Wiki</title>
+  <meta name="description" content="A laser detector on the Moon could, in principle, tell whether dark energy clumps together or stays perfectly smooth. This paper forecasts how well such a measurement would work.">
+  <!-- preconnect first or the fonts pop in late and the page jumps -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- prefix is "" on the home page and "../" inside papers/ and concepts/, don't hardcode it -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="orbs" aria-hidden="true"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="../index.html">Astro Paper Wiki <span>/ notes from the seminar</span></a>
+      <nav>
+        <a href="../index.html#papers">Papers</a>
+        <a href="../index.html#concepts">Concepts</a>
+        <a href="../index.html#how">How it works</a>
+      </nav>
+    </header>
+
+    <main class="article">
+      <a class="crumb" href="../index.html#papers">← all papers</a>
+      <p class="kicker">paper · arXiv:2603.04841</p>
+      <h1>Probing Dark Energy on the Moon</h1>
+      <p class="byline">Alfredo Gurrola et al. · <a href="https://arxiv.org/abs/2603.04841" target="_blank" rel="noopener">arXiv:2603.04841 ↗</a></p>
+      <div class="chips"><span class="chip tag theory">theory</span><span class="chip tag cosmology">cosmology</span></div>
+
+      <div class="tldr"><b>TL;DR</b>A laser detector on the Moon could, in principle, tell whether dark energy clumps together or stays perfectly smooth. This paper forecasts how well such a measurement would work.</div>
+
+      <div class="block"><h2>Research question</h2><p>Dark energy might be perfectly smooth (the standard ΛCDM picture) or it might clump a little, depending on how fast pressure waves travel through it (its sound speed). The authors asked whether a lunar laser interferometer, measuring tiny stretches of space at very low frequencies, could measure the parameters that control this.</p></div>
+      <div class="block"><h2>Data &amp; tools</h2><ul><li>No real data. This is a forecast using mock (simulated) signals.</li><li>Example detector: LILA, the Lunar Interferometer for Laser Astronomy</li><li>Target frequencies: 10⁻⁷ to 10⁻³ Hz, which the paper says is largely inaccessible from Earth</li><li>Assumed universe: Ω<sub>m</sub> = 0.3, Ω<sub>DE</sub> = 0.7, w = −1</li><li>Prior: w within 3% of −1, from Planck 2018 + BAO + Type Ia supernovae</li></ul></div>
+      <div class="block"><h2>Method</h2><ol><li>Start from the effective field theory (EFT) of dark energy and focus on its kinetic term, with coefficient M₂⁴ (Eqs. 1–3).</li><li>Connect M₂⁴ to the sound speed: c<sub>s</sub>² = c / (c + 2M₂⁴) (Eq. 2).</li><li>Model how gravity's potential changes with scale using a simple transfer function (Eq. 14).</li><li>Turn that into the strain signal a detector would see (Eq. 15).</li><li>Forecast how precisely the parameters could be measured with a Gaussian likelihood and a Fisher matrix (Eqs. 16–17).</li></ol></div>
+      <div class="block"><h2>Key results</h2>
+        <div class="table-wrap"><table><thead><tr><th>Result</th><th>Value</th><th>Where in paper</th></tr></thead><tbody><tr><td>Contours with other EFT terms fixed</td><td>1σ / 2σ ellipses in (M̃₂⁴, c<sub>s</sub>²)</td><td class="where">Fig. 1</td></tr><tr><td>Contours with 3% prior on w, braiding free</td><td>contours get wider and tilted</td><td class="where">Fig. 2</td></tr><tr><td>Contours with all EFT terms free</td><td>shown in (M̃₂⁴, c̃) plane</td><td class="where">Fig. 3</td></tr><tr><td>Clumping vs. smooth dark energy</td><td>c<sub>s</sub>² = 10⁻² is well separated from c<sub>s</sub>² = 1</td><td class="where">Results discussion</td></tr><tr><td>Exact numerical error bars</td><td>not given in the text</td><td class="where">—</td></tr></tbody></table></div>
+      </div>
+      <div class="block"><h2>Conclusions</h2><ul><li>Horizon-scale strain could directly probe the kinetic part of dark energy's EFT.</li><li>Strongly clumping dark energy (c<sub>s</sub>² ≪ 1) would look clearly different from smooth ΛCDM (c<sub>s</sub>² = 1).</li><li>This complements existing tests like the integrated Sachs–Wolfe effect.</li><li>Whether M₂⁴ turns out large or small hints at what deeper theory sits underneath.</li></ul></div>
+      <div class="block"><h2>Limitations</h2><ul><li>Uses mock spectra and a Fisher forecast, not real data or a full likelihood analysis.</li><li>Detector noise is design-agnostic, so no real LILA noise curve is used.</li><li>Approximates the strain as h ≈ ΔΦ/c² and uses a simplified transfer function.</li><li>Uses only the simplest (minimal) version of the EFT.</li><li>Strong degeneracies between M̃₂⁴ and c<sub>s</sub>² (and c̃) make them hard to separate.</li></ul></div>
+      <div class="block verify"><h2>To verify</h2><ul><li>No numerical 1σ / 2σ bounds are stated, only figures. Read values off Figs. 1–3 carefully before quoting.</li><li>The Jeans scale is written as k<sub>J</sub> ~ aH/c<sub>s</sub>, while the transfer function uses c<sub>s</sub>k/aH. Check that the notation is consistent.</li><li>Typo in the text: “(δq⁰⁰)²” should be (δg⁰⁰)².</li></ul></div>
+      <div class="block"><h2>Concepts in this paper</h2><div class="chips"><a class="chip" href="../concepts/dark-energy.html">Dark energy</a><a class="chip" href="../concepts/effective-field-theory.html">Effective field theory</a><a class="chip" href="../concepts/fisher-matrix.html">Fisher matrix</a><a class="chip" href="../concepts/lila.html">LILA</a><a class="chip" href="../concepts/sound-speed.html">Sound speed (of dark energy)</a><a class="chip" href="../concepts/moon.html">The Moon</a></div></div>
+      <div class="block"><h2>My seminar questions</h2><ol><li>How realistic is the signal-dominated assumption once a real LILA noise curve is used?</li><li>Which actual dark energy models predict c<sub>s</sub>² ≪ 1, and are any of them already ruled out?</li><li>Could Earth-based data (ISW, galaxy surveys) already exclude part of this parameter space?</li></ol></div>
+    </main>
+    <footer>
+      <a class="crumb" href="../index.html">← back to home</a>
+      <span>added on 2026-11-15</span>
+    </footer>
+  </div>
+</body>
+</html>

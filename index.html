@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Astro Paper Wiki</title>
+  <meta name="description" content="A personal wiki of astrophysics papers, explained for a CS student.">
+  <!-- preconnect first or the fonts pop in late and the page jumps -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- prefix is "" on the home page and "../" inside papers/ and concepts/, don't hardcode it -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="orbs" aria-hidden="true"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="index.html">Astro Paper Wiki <span>/ notes from the seminar</span></a>
+      <nav>
+        <a href="index.html#papers">Papers</a>
+        <a href="index.html#concepts">Concepts</a>
+        <a href="index.html#how">How it works</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1><span class="grad-text">Astro Paper Wiki</span></h1>
+        <p>Astrophysics papers from my seminar, broken into reusable concepts and explained for a CS student. Every paper links to its concepts, and every concept collects every paper that uses it.</p>
+        <div class="stats">
+          <span class="stat"><b>2</b>papers</span>
+          <span class="stat"><b>12</b>concepts</span>
+          <span class="stat"><b>1</b>shared between papers</span>
+        </div>
+      </section>
+
+      <section id="papers">
+        <div class="section-head"><h2>Papers</h2><p>newest first</p></div>
+        <div class="grid">
+        <a class="card" href="papers/2026-caddy-moonlit-satellites.html">
+          <div class="chips"><span class="chip tag observational">observational</span><span class="chip tag satellites">satellites</span></div>
+          <h3>The First Observations of Moonlit Satellites</h3>
+          <p>Big satellites like the ISS can be tracked at night using only moonlight, which opens up hours that used to be blind.</p>
+          <span class="meta">Sarah E. Caddy et al. · arXiv:2609.07057 · 7 concepts</span>
+        </a>
+        <a class="card" href="papers/2026-gurrola-dark-energy-moon.html">
+          <div class="chips"><span class="chip tag theory">theory</span><span class="chip tag cosmology">cosmology</span></div>
+          <h3>Probing Dark Energy on the Moon</h3>
+          <p>A laser detector on the Moon could test whether dark energy clumps together or stays perfectly smooth.</p>
+          <span class="meta">Alfredo Gurrola et al. · arXiv:2603.04841 · 6 concepts</span>
+        </a>
+        </div>
+      </section>
+
+      <section id="concepts">
+        <div class="section-head"><h2>Concepts</h2><p>A–Z · number = papers using it</p></div>
+        <div class="az"><a href="concepts/apparent-magnitude.html">Apparent magnitude<span>1</span></a><a href="concepts/brdf.html">BRDF<span>1</span></a><a href="concepts/dark-energy.html">Dark energy<span>1</span></a><a href="concepts/effective-field-theory.html">Effective field theory<span>1</span></a><a href="concepts/fisher-matrix.html">Fisher matrix<span>1</span></a><a href="concepts/lila.html">LILA<span>1</span></a><a href="concepts/low-earth-orbit.html">Low Earth orbit<span>1</span></a><a href="concepts/lunar-earthshine.html">Lunar-Earthshine<span>1</span></a><a href="concepts/moon.html">The Moon<span>2</span></a><a href="concepts/rubin-observatory.html">Rubin Observatory<span>1</span></a><a href="concepts/sound-speed.html">Sound speed (of dark energy)<span>1</span></a><a href="concepts/surface-brightness.html">Surface brightness<span>1</span></a></div>
+      </section>
+
+      <section id="how">
+        <div class="section-head"><h2>How this wiki grows</h2><p>rules live in <a href="https://github.com/lakeofpeppi/Week-11---Astrophysics-Paper-Wiki/blob/main/CLAUDE.md" target="_blank" rel="noopener">CLAUDE.md</a></p></div>
+        <div class="steps">
+          <div class="step"><h3>Drop in a paper</h3><p>I give the AI an arXiv link. It's logged in <span class="mono">raw/sources.md</span>, and the PDF itself is never uploaded.</p></div>
+          <div class="step"><h3>Paper page</h3><p>Same 12 sections every time, and every number cites its section, figure or table.</p></div>
+          <div class="step"><h3>Concepts update</h3><p>Existing concepts get a new “appears in” row. New ones get their own page.</p></div>
+          <div class="step"><h3>Conflicts flagged</h3><p>If papers disagree, or a paper contradicts itself, it's marked “to verify”, never guessed.</p></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a class="crumb" href="index.html">← back to home</a>
+      <span><a href="https://github.com/lakeofpeppi/Week-11---Astrophysics-Paper-Wiki" target="_blank" rel="noopener">source on GitHub ↗</a></span>
+    </footer>
+  </div>
+</body>
+</html>

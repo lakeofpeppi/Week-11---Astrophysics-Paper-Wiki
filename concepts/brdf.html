@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BRDF · Astro Paper Wiki</title>
+  <meta name="description" content="Bidirectional reflectance distribution function: how a surface reflects light for every incoming and outgoing direction.">
+  <!-- preconnect first or the fonts pop in late and the page jumps -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- prefix is "" on the home page and "../" inside papers/ and concepts/, don't hardcode it -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="orbs" aria-hidden="true"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="../index.html">Astro Paper Wiki <span>/ notes from the seminar</span></a>
+      <nav>
+        <a href="../index.html#papers">Papers</a>
+        <a href="../index.html#concepts">Concepts</a>
+        <a href="../index.html#how">How it works</a>
+      </nav>
+    </header>
+
+    <main class="article">
+      <a class="crumb" href="../index.html#concepts">← all concepts</a>
+      <p class="kicker">concept · used in 1 paper</p>
+      <h1>BRDF</h1>
+      <p class="byline">Bidirectional reflectance distribution function: how a surface reflects light for every incoming and outgoing direction.</p>
+
+      <div class="block"><h2>Plain explanation</h2><p>A BRDF is a function f(light direction, view direction) that tells you how much light a surface sends toward you.</p><p>A <b>Lambertian</b> surface (matte paper) scatters light evenly in all directions. A <b>specular</b> surface (polished metal) sends most light in one mirror direction. The <b>Phong</b> model mixes both with a simple formula.</p>
+        <div class="analogy"><b>Analogy:</b> This is the same idea used in 3D graphics and game shaders. Satellite brightness models basically “render” the satellite from the telescope's point of view.</div>
+      </div>
+      <div class="block"><h2>Why astronomers care</h2><ul><li>Satellite brightness depends heavily on what each surface is made of and its angle to the light.</li><li>A wrong BRDF means a wrong brightness prediction, even if the orbit is perfect.</li></ul></div>
+      <div class="block"><h2>Appears in</h2>
+        <div class="table-wrap"><table><thead><tr><th>Paper</th><th>How this paper uses it</th></tr></thead><tbody><tr><td><a href="../papers/2026-caddy-moonlit-satellites.html">The First Observations of Moonlit Satellites</a></td><td>The lumos-sat model gives each satellite surface a BRDF (Lambertian or Phong). Earth's BRDF uses generic settings, and BlueBird's Lambertian BRDF is unverified (Sec. 2.3.2, 4.2).</td></tr></tbody></table></div>
+      </div>
+      
+      <div class="block"><h2>Related concepts</h2><div class="chips"><a class="chip" href="../concepts/apparent-magnitude.html">Apparent magnitude</a><a class="chip" href="../concepts/lunar-earthshine.html">Lunar-Earthshine</a></div></div>
+    </main>
+    <footer>
+      <a class="crumb" href="../index.html">← back to home</a>
+      <span></span>
+    </footer>
+  </div>
+</body>
+</html>

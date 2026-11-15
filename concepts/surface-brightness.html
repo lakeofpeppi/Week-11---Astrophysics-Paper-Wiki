@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Surface brightness · Astro Paper Wiki</title>
+  <meta name="description" content="Brightness per patch of sky, measured in magnitudes per square arcsecond (mag/arcsec²).">
+  <!-- preconnect first or the fonts pop in late and the page jumps -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- prefix is "" on the home page and "../" inside papers/ and concepts/, don't hardcode it -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="orbs" aria-hidden="true"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="../index.html">Astro Paper Wiki <span>/ notes from the seminar</span></a>
+      <nav>
+        <a href="../index.html#papers">Papers</a>
+        <a href="../index.html#concepts">Concepts</a>
+        <a href="../index.html#how">How it works</a>
+      </nav>
+    </header>
+
+    <main class="article">
+      <a class="crumb" href="../index.html#concepts">← all concepts</a>
+      <p class="kicker">concept · used in 1 paper</p>
+      <h1>Surface brightness</h1>
+      <p class="byline">Brightness per patch of sky, measured in magnitudes per square arcsecond (mag/arcsec²).</p>
+
+      <div class="block"><h2>Plain explanation</h2><p>For things that are spread out, like galaxies, nebulae or a satellite's streak, total brightness isn't what matters for detection. What matters is how bright <b>each small patch</b> is compared with the sky background.</p><p>A neat property: for a resolved object, surface brightness doesn't change with distance. It gets smaller, but each patch stays equally bright.</p>
+        <div class="analogy"><b>Analogy:</b> A TV screen looks just as bright from across the room. It looks smaller, but each part of it isn't dimmer.</div>
+      </div>
+      <div class="block"><h2>Why astronomers care</h2><ul><li>It decides whether something faint and fuzzy can be pulled out of the sky background.</li><li>Detection limits for surveys are given in mag/arcsec².</li></ul></div>
+      <div class="block"><h2>Appears in</h2>
+        <div class="table-wrap"><table><thead><tr><th>Paper</th><th>How this paper uses it</th></tr></thead><tbody><tr><td><a href="../papers/2026-caddy-moonlit-satellites.html">The First Observations of Moonlit Satellites</a></td><td>Full-Moon detection limits: 1σ 21.65 and 5σ 19.67 mag/arcsec². Modelled ISS peak: 20.05 mag/arcsec² (Sec. 4.2, Fig. 12).</td></tr></tbody></table></div>
+      </div>
+      
+      <div class="block"><h2>Related concepts</h2><div class="chips"><a class="chip" href="../concepts/apparent-magnitude.html">Apparent magnitude</a><a class="chip" href="../concepts/rubin-observatory.html">Rubin Observatory</a></div></div>
+    </main>
+    <footer>
+      <a class="crumb" href="../index.html">← back to home</a>
+      <span></span>
+    </footer>
+  </div>
+</body>
+</html>
