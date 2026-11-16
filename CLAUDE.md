@@ -136,7 +136,10 @@ When I say *"ingest this paper: <link or pdf>"*:
      to "Appears in". Do not rewrite the existing explanation.
    - **doesn't exist** → create it from `templates/concept-template.html`.
    - if this paper **disagrees** with a paper already listed → add/extend the
-     "⚠ Conflicting findings" section on that concept page.
+     "⚠ Conflicting findings" section on that concept page. Only for real
+     disagreements about the SAME thing (same object, same quantity). Two papers
+     explaining different objects in different ways is not a conflict; just add
+     both rows to "Appears in".
 5. Update `index.html`:
    - add a paper card to the papers grid, sorted by arXiv ID, newest first
      (2609.xxxxx before 2605.xxxxx). Order is by publication, NOT by date added.
@@ -145,6 +148,10 @@ When I say *"ingest this paper: <link or pdf>"*:
 6. Update `wiki-index.md` (one line per new page) and add one line to `log.md`:
    `YYYY-MM-DD | ingest | <paper file> | +N concepts, ~M concepts updated`
 7. Run the done-check (section 10) and report it to me.
+
+When I give several papers at once: ingest them ONE AT A TIME in arXiv-ID order
+(oldest first), doing all 7 steps for each before starting the next, with one
+`log.md` line per paper. That way a later paper can reuse concepts an earlier one created.
 
 Other commands I may use:
 - *"lint"* → check every page: broken links, concepts with no papers,
@@ -216,3 +223,7 @@ When something goes wrong, add a rule above and note it here.
 - 2026-11-16 — while ingesting paper 3, "add card at the TOP (newest first)" was
   ambiguous (newest published or newest added?) → section 7 now says sort by arXiv ID.
 - 2026-11-16 — paper 3 (planetary science) fit no field tag → added `planetary` to section 4.
+- 2026-11-16 — got 4 papers at once with no rule for batches → section 7 now says one
+  at a time in arXiv order, so later papers can reuse concepts from earlier ones.
+- 2026-11-16 — two ultracool dwarf papers explained odd spectra differently (dust vs
+  aurora) but about different objects → section 7 now defines what counts as a conflict.

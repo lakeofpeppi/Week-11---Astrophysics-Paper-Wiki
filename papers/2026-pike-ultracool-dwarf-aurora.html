@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JWST/NIRISS-SOSS Spectroscopic Variability and Auroral Modelling of Warm Ultracool Dwarf LSR J1835+3259 · Astro Paper Wiki</title>
+  <meta name="description" content="JWST watched a tiny, fast-spinning star with auroras change brightness as it rotates. No standard atmosphere model fits, but heating from the auroras could explain its strange spectrum.">
+  <!-- preconnect first or the fonts pop in late and the page jumps -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- prefix is "" on the home page and "../" inside papers/ and concepts/, don't hardcode it -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="orbs" aria-hidden="true"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="../index.html">Astro Paper Wiki <span>/ notes from the seminar</span></a>
+      <nav>
+        <a href="../index.html#papers">Papers</a>
+        <a href="../index.html#concepts">Concepts</a>
+        <a href="../index.html#how">How it works</a>
+      </nav>
+    </header>
+
+    <main class="article">
+      <a class="crumb" href="../index.html#papers">← all papers</a>
+      <p class="kicker">paper · arXiv:2611.18246</p>
+      <h1>JWST/NIRISS-SOSS Spectroscopic Variability and Auroral Modelling of Warm Ultracool Dwarf LSR J1835+3259</h1>
+      <p class="byline">Eleanor Pike et al. · <a href="https://arxiv.org/abs/2611.18246" target="_blank" rel="noopener">arXiv:2611.18246 ↗</a></p>
+      <div class="chips"><span class="chip tag observational">observational</span></div>
+
+      <div class="tldr"><b>TL;DR</b>JWST watched a tiny, fast-spinning star with auroras change brightness as it rotates. No standard atmosphere model fits, but heating from the auroras could explain its strange spectrum.</div>
+
+      <div class="block"><h2>Research question</h2><p>Some ultracool dwarfs have auroras like Jupiter's, and these may cause their brightness to vary. The authors used JWST to see how the infrared spectrum of the M8.5 dwarf LSR J1835+3259 changes as it spins, to find out what physically drives the variability.</p></div>
+      <div class="block"><h2>Data &amp; tools</h2><ul><li>JWST NIRISS/SOSS time-series spectroscopy, ~3.6 h on 2023 July 11, covering one full rotation (Sec. 2.3)</li><li>GTC/MEGARA and Keck/HIRES optical spectra to track Hα activity (Sec. 2)</li><li>Archival broadband SED, fitted with VOSA (Sec. 3.4.2)</li><li>BT-Settl model atmospheres and PICASO for perturbed (heated) atmospheres (Sec. 3.4–3.5)</li></ul></div>
+      <div class="block"><h2>Method</h2><ol><li>Check Hα emission to see how active the star was during the JWST visit (Sec. 3.1).</li><li>Look for aurora fingerprints (H₃⁺ emission, hydronium absorption) in the average spectrum (Sec. 3.2).</li><li>Use principal component analysis to split the variability into independent patterns (Sec. 3.3).</li><li>Fit a blend of an M-dwarf photosphere and a cooler blackbody (the Hallinan 2015 model) to the spectrum and SED (Sec. 3.4).</li><li>Perturb PICASO models with heating and non-equilibrium chemistry to test a more physical explanation (Sec. 3.5).</li></ol></div>
+      <div class="block"><h2>Key results</h2>
+        <div class="table-wrap"><table><thead><tr><th>Result</th><th>Value</th><th>Where in paper</th></tr></thead><tbody><tr><td>Rotation period</td><td>~2.84 hours</td><td class="where">Sec. 1</td></tr><tr><td>Distance</td><td>5.69 pc</td><td class="where">Sec. 1</td></tr><tr><td>Max spectral variation across rotation</td><td>~0.5% (vs ~3% optically in 2015)</td><td class="where">Sec. 3.3</td></tr><tr><td>Variance explained by PCA</td><td>~8% total, component 1 ~7%</td><td class="where">Sec. 3.3</td></tr><tr><td>Single-model vs blended SED fit</td><td>χ²<sub>ν</sub> = 49.4 vs 17.3</td><td class="where">Sec. 3.4.2</td></tr><tr><td>Blended SED fit</td><td>T<sub>eff</sub> = 2500 ± 50 K + blackbody 1800 ± 25 K, 63% coverage</td><td class="where">Fig. 10</td></tr><tr><td>Aurora molecules H₃⁺ / hydronium</td><td>not detected</td><td class="where">Sec. 3.2, Sec. 4</td></tr></tbody></table></div>
+      </div>
+      <div class="block"><h2>Conclusions</h2><ul><li>Hα activity has dropped since 2012, so the star was likely in a quieter state during the JWST visit.</li><li>Two variability patterns exist: one from FeH near 1 µm, one broadband in the H and K bands.</li><li>No standard model atmosphere fits the average spectrum; a photosphere + blackbody blend fits better but isn't physically realistic.</li><li>Auroral heating plus non-equilibrium chemistry can mimic that blend, a more physical explanation.</li></ul></div>
+      <div class="block"><h2>Limitations</h2><ul><li>Observed during a low-activity state, so auroral effects may be weaker than usual (Sec. 3.1).</li><li>Covers only one rotation (Sec. 2.3).</li><li>The blackbody blend needs ~63% surface coverage, which the authors call physically implausible (Sec. 3.5).</li><li>Hotter model grids (T<sub>eff</sub> ≥ 2600 K) are needed to apply the perturbation model properly (Sec. 4).</li></ul></div>
+      <div class="block verify"><h2>To verify</h2><ul><li>The blackbody temperature is 1510 K in the NIRISS spectrum fit (Fig. 9) but 1800 ± 25 K in the SED fit (Fig. 10). These are two different fits, so say which one when quoting.</li><li>Section numbering jumps: 3.2.1 appears after 3.3.</li></ul></div>
+      <div class="block"><h2>Concepts in this paper</h2><div class="chips"><a class="chip" href="../concepts/aurora.html">Aurora</a><a class="chip" href="../concepts/jwst.html">JWST</a><a class="chip" href="../concepts/m-dwarf.html">M dwarf</a><a class="chip" href="../concepts/principal-component-analysis.html">Principal component analysis</a><a class="chip" href="../concepts/ultracool-dwarf.html">Ultracool dwarf</a></div></div>
+      <div class="block"><h2>My seminar questions</h2><ol><li>Would observing during a high-activity state show stronger aurora-driven variability?</li><li>What chemistry could make FeH vary with the aurora?</li><li>Could simultaneous radio and infrared monitoring link each radio pulse to a spectral change?</li></ol></div>
+    </main>
+    <footer>
+      <a class="crumb" href="../index.html">← back to home</a>
+      <span>added on 2026-11-15</span>
+    </footer>
+  </div>
+</body>
+</html>

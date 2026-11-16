@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swept by the Galactic Tide: How Galactic Tides and Stellar Encounters Drive the Evolution of Wide Binaries and Their Giant Planets · Astro Paper Wiki</title>
+  <meta name="description" content="The pull of the whole Milky Way, plus stars passing by, slowly disturbs very wide pairs of stars over billions of years, and that stretches, flips or throws out the giant planets living inside them.">
+  <!-- preconnect first or the fonts pop in late and the page jumps -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- prefix is "" on the home page and "../" inside papers/ and concepts/, don't hardcode it -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="orbs" aria-hidden="true"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="../index.html">Astro Paper Wiki <span>/ notes from the seminar</span></a>
+      <nav>
+        <a href="../index.html#papers">Papers</a>
+        <a href="../index.html#concepts">Concepts</a>
+        <a href="../index.html#how">How it works</a>
+      </nav>
+    </header>
+
+    <main class="article">
+      <a class="crumb" href="../index.html#papers">← all papers</a>
+      <p class="kicker">paper · arXiv:2611.15913</p>
+      <h1>Swept by the Galactic Tide: How Galactic Tides and Stellar Encounters Drive the Evolution of Wide Binaries and Their Giant Planets</h1>
+      <p class="byline">Vighnesh Nagpal et al. · <a href="https://arxiv.org/abs/2611.15913" target="_blank" rel="noopener">arXiv:2611.15913 ↗</a></p>
+      <div class="chips"><span class="chip tag theory">theory</span><span class="chip tag planetary">planetary</span></div>
+
+      <div class="tldr"><b>TL;DR</b>The pull of the whole Milky Way, plus stars passing by, slowly disturbs very wide pairs of stars over billions of years, and that stretches, flips or throws out the giant planets living inside them.</div>
+
+      <div class="block"><h2>Research question</h2><p>Many planet-hosting stars have a very distant companion star (a wide binary). Unlike single stars, these pairs get reshaped over billions of years by the Galaxy's tidal pull and by passing stars. The authors asked how this changes the orbits and survival of the giant planets inside them, so that planets around wide binaries and single stars can be compared fairly.</p></div>
+      <div class="block"><h2>Data &amp; tools</h2><ul><li>N-body simulations with REBOUND (plus REBOUNDx for general relativity) (Sec. 2.1)</li><li>2500 simulated systems with both the Galactic tide and stellar encounters (Sec. 5.6)</li><li>Planets and host stars sampled from a Gaia DR5 mock catalogue: super-Jupiters, median 8.1 Jupiter masses, at 1–6.5 AU (Sec. 2.1)</li><li>Binary companions at 10³–10⁵ AU, on a Sun-like orbit through the Galaxy, run for 9 Gyr (Sec. 2.1)</li><li>Control runs with no Galactic tide and/or no stellar encounters (Fig. 19)</li></ul></div>
+      <div class="block"><h2>Method</h2><ol><li>Draw realistic stars and giant planets from a Gaia mock catalogue, then add a distant companion star (Sec. 2.1).</li><li>Move each system along a Sun-like orbit through a Milky Way model so it feels the Galactic tide (Sec. 2.2, Fig. 1).</li><li>Add random flybys of passing field stars (Sec. 2.3, 3.2).</li><li>Integrate every system for 9 Gyr and record planet eccentricities, ejections, disruptions and binary break-ups (Sec. 3–5).</li><li>Compare with control grids without the Galactic tide or encounters (Fig. 19).</li></ol></div>
+      <div class="block"><h2>Key results</h2>
+        <div class="table-wrap"><table><thead><tr><th>Result</th><th>Value</th><th>Where in paper</th></tr></thead><tbody><tr><td>Median planet eccentricity after 9 Gyr</td><td>~0.25 (started at ~0.15)</td><td class="where">Sec. 7, point 1</td></tr><tr><td>Planets ejected / tidally disrupted over 9 Gyr</td><td>~6% / ~3% (vs ~1% total lost without Galaxy effects)</td><td class="where">Sec. 7, point 3</td></tr><tr><td>Planets lost in near-equal-mass binaries (q ≳ 0.8)</td><td>~20% by 9 Gyr (vs ~8% for q ≲ 0.3)</td><td class="where">Sec. 7, point 3</td></tr><tr><td>Speed of ejected planets</td><td>median ~4.6 km/s</td><td class="where">Sec. 7, point 4</td></tr><tr><td>Binaries broken apart (ionized)</td><td>~22% by 3 Gyr, ~40% by 9 Gyr</td><td class="where">Sec. 3.3</td></tr><tr><td>Systems where the binary breaks but the planet survives</td><td>1066 of 2500 (43%)</td><td class="where">Sec. 5.6</td></tr><tr><td>Systems that could make hot Jupiters</td><td>~2–6% (vs ~1–2% without Galaxy effects)</td><td class="where">Fig. 19, Sec. 7 point 7</td></tr></tbody></table></div>
+      </div>
+      <div class="block"><h2>Conclusions</h2><ul><li>Giant planets in wide binaries should be more eccentric than those around single stars, especially in older systems and with heavier companions.</li><li>Binaries tilted nearly perpendicular to the Galaxy's disk lose their planets most often.</li><li>Galaxy-disturbed wide binaries steadily produce free-floating planets and up to ~3× more hot Jupiter candidates.</li><li>These are testable predictions for Gaia DR4 and DR5.</li></ul></div>
+      <div class="block"><h2>Limitations</h2><ul><li>Only one super-Jupiter per system; multi-planet systems could behave differently (Sec. 6.1).</li><li>Only Sun-like Galactic orbits are simulated; closer to the Galactic centre the tide is much stronger (Sec. 6.2).</li><li>Tides are not modelled directly, so hot Jupiter numbers are upper limits (Fig. 19).</li><li>Partial tidal disruptions are not modelled, hence the conservative vs optimistic estimates (Fig. 19).</li></ul></div>
+      <div class="block verify"><h2>To verify</h2><ul><li>Sec. 3.3 says ~40% of binaries are ionized by 9 Gyr, but Sec. 5.6 says the binary is ionized with the planet surviving in 43% of systems (1066/2500). A subset can't be larger than the total, so these may come from different simulation grids. Check before quoting.</li><li>Median ionization time is 2.6 Gyr in Sec. 3.3 but 2.5 Gyr in Sec. 5.6, probably the same grid issue.</li></ul></div>
+      <div class="block"><h2>Concepts in this paper</h2><div class="chips"><a class="chip" href="../concepts/free-floating-planet.html">Free-floating planet</a><a class="chip" href="../concepts/galactic-tide.html">Galactic tide</a><a class="chip" href="../concepts/hot-jupiter.html">Hot Jupiter</a><a class="chip" href="../concepts/orbital-eccentricity.html">Orbital eccentricity</a><a class="chip" href="../concepts/wide-binary.html">Wide binary</a></div></div>
+      <div class="block"><h2>My seminar questions</h2><ol><li>Is the 40% vs 43% ionization difference from two different simulation grids?</li><li>How would the results change for multi-planet systems, where planets can shield each other?</li><li>How many wide-binary giant planets would Gaia DR4 need to detect to test the eccentricity prediction?</li></ol></div>
+    </main>
+    <footer>
+      <a class="crumb" href="../index.html">← back to home</a>
+      <span>added on 2026-11-15</span>
+    </footer>
+  </div>
+</body>
+</html>

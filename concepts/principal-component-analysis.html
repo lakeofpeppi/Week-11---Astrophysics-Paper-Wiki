@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Principal component analysis · Astro Paper Wiki</title>
+  <meta name="description" content="A method that finds the few main patterns that explain most of the variation in a dataset.">
+  <!-- preconnect first or the fonts pop in late and the page jumps -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- prefix is "" on the home page and "../" inside papers/ and concepts/, don't hardcode it -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="orbs" aria-hidden="true"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="../index.html">Astro Paper Wiki <span>/ notes from the seminar</span></a>
+      <nav>
+        <a href="../index.html#papers">Papers</a>
+        <a href="../index.html#concepts">Concepts</a>
+        <a href="../index.html#how">How it works</a>
+      </nav>
+    </header>
+
+    <main class="article">
+      <a class="crumb" href="../index.html#concepts">← all concepts</a>
+      <p class="kicker">concept · used in 1 paper</p>
+      <h1>Principal component analysis</h1>
+      <p class="byline">A method that finds the few main patterns that explain most of the variation in a dataset.</p>
+
+      <div class="block"><h2>Plain explanation</h2><p>PCA finds new axes (components) along which the data varies the most, ordered by how much variance each explains. It's a standard dimensionality-reduction tool in ML.</p><p>For a time series of spectra, each component is a “shape” of change across wavelengths, so you can see if different parts of the spectrum vary for different reasons.</p>
+        <div class="analogy"><b>Analogy:</b> Like finding that most of a song's loudness changes come from just the drums and the bass, out of dozens of instruments.</div>
+      </div>
+      <div class="block"><h2>Why astronomers care</h2><ul><li>It separates different physical causes of variability.</li><li>It reduces noisy, high-dimensional data to a few interpretable signals.</li></ul></div>
+      <div class="block"><h2>Appears in</h2>
+        <div class="table-wrap"><table><thead><tr><th>Paper</th><th>How this paper uses it</th></tr></thead><tbody><tr><td><a href="../papers/2026-pike-ultracool-dwarf-aurora.html">JWST/NIRISS-SOSS Spectroscopic Variability and Auroral Modelling of Warm Ultracool Dwarf LSR J1835+3259</a></td><td>Two components explain ~8% of the variance: one dominated by FeH near 1 µm, one broadband in the H and K bands (Sec. 3.3).</td></tr></tbody></table></div>
+      </div>
+      
+      <div class="block"><h2>Related concepts</h2><div class="chips"><a class="chip" href="../concepts/fisher-matrix.html">Fisher matrix</a><a class="chip" href="../concepts/ultracool-dwarf.html">Ultracool dwarf</a></div></div>
+    </main>
+    <footer>
+      <a class="crumb" href="../index.html">← back to home</a>
+      <span></span>
+    </footer>
+  </div>
+</body>
+</html>

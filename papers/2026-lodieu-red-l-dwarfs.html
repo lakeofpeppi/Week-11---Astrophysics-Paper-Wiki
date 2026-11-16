@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Euclid DR1 Legacy Science on Ultracool Dwarfs: New URLD candidates in Euclid and SPHEREx · Astro Paper Wiki</title>
+  <meta name="description" content="The Euclid space telescope's first data release reveals over 1,200 unusually red, dusty brown dwarfs, many of them young, which makes them good stand-ins for studying giant planets.">
+  <!-- preconnect first or the fonts pop in late and the page jumps -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- prefix is "" on the home page and "../" inside papers/ and concepts/, don't hardcode it -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="orbs" aria-hidden="true"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="../index.html">Astro Paper Wiki <span>/ notes from the seminar</span></a>
+      <nav>
+        <a href="../index.html#papers">Papers</a>
+        <a href="../index.html#concepts">Concepts</a>
+        <a href="../index.html#how">How it works</a>
+      </nav>
+    </header>
+
+    <main class="article">
+      <a class="crumb" href="../index.html#papers">← all papers</a>
+      <p class="kicker">paper · arXiv:2611.17519</p>
+      <h1>Euclid DR1 Legacy Science on Ultracool Dwarfs: New URLD candidates in Euclid and SPHEREx</h1>
+      <p class="byline">N. Lodieu et al. · <a href="https://arxiv.org/abs/2611.17519" target="_blank" rel="noopener">arXiv:2611.17519 ↗</a></p>
+      <div class="chips"><span class="chip tag observational">observational</span></div>
+
+      <div class="tldr"><b>TL;DR</b>The Euclid space telescope's first data release reveals over 1,200 unusually red, dusty brown dwarfs, many of them young, which makes them good stand-ins for studying giant planets.</div>
+
+      <div class="block"><h2>Research question</h2><p>Unusually red L dwarfs (URLDs) are failed stars with extra-dusty, cloudy atmospheres. They look like young giant exoplanets but float alone, which makes them easier to study. The authors searched Euclid's first data release for new ones, and checked them with spectra.</p></div>
+      <div class="block"><h2>Data &amp; tools</h2><ul><li>Euclid DR1 photometry: ~1,900 deg² wide survey and ~50 deg² deep survey (Abstract)</li><li>Euclid red grism spectra (Abstract, Sec. 2)</li><li>SPHEREx infrared spectra, kept only if S/N > 3 at 1.1 µm and > 10 at 2.2 µm (Sec. 4.1)</li><li>Known URLDs from the literature for comparison (Sec. 3.2, Table 2)</li></ul></div>
+      <div class="block"><h2>Method</h2><ol><li>Find known URLDs in Euclid DR1 to learn where they sit in colour space (Sec. 3.2).</li><li>Select new candidates with colour cuts, e.g. I<sub>E</sub> − H<sub>E</sub> ≥ 4.4 mag, plus point-source and quality filters (Sec. 3.3).</li><li>Cross-match candidates with SPHEREx and Euclid grism spectra (Sec. 3.3, 4.1).</li><li>Integrate each spectrum to get a bolometric flux and magnitude (Sec. 4.2, Eq. 1).</li><li>Compare colours, spectral types and gravity features to estimate ages (Sec. 5.2–5.3).</li></ol></div>
+      <div class="block"><h2>Key results</h2>
+        <div class="table-wrap"><table><thead><tr><th>Result</th><th>Value</th><th>Where in paper</th></tr></thead><tbody><tr><td>New URLD candidates, wide survey</td><td>1202</td><td class="where">Abstract, Sec. 3.3</td></tr><tr><td>New URLD candidates, deep survey</td><td>38</td><td class="where">Abstract, Sec. 3.3</td></tr><tr><td>Candidates with SPHEREx spectra</td><td>5</td><td class="where">Sec. 3.3, Table 3</td></tr><tr><td>Candidates confirmed as URLDs spectroscopically</td><td>about 40</td><td class="where">Sec. 6</td></tr><tr><td>Bolometric magnitude zero point</td><td>−2.5 log(flux) − 18.9986</td><td class="where">Sec. 4.2, Eq. 1</td></tr><tr><td>Typical age of many candidates</td><td>Pleiades-like, ~130 Myr</td><td class="where">Sec. 5.3</td></tr><tr><td>Youngest subset</td><td>≤ 10 Myr, low gravity</td><td class="where">Abstract, Sec. 6</td></tr></tbody></table></div>
+      </div>
+      <div class="block"><h2>Conclusions</h2><ul><li>Euclid hugely expands the known population of unusually red L dwarfs.</li><li>Their colours point to thick, sub-micron dust clouds in their atmospheres.</li><li>Most look intermediate-age, but some are very young and low-gravity.</li><li>They are free-floating benchmarks for young giant exoplanets.</li></ul></div>
+      <div class="block"><h2>Limitations</h2><ul><li>Most of the 1,240 objects are photometric candidates; only about 40 are confirmed with spectra (Sec. 6).</li><li>Bolometric fluxes need model-based extrapolation outside the SPHEREx range (Sec. 4.2).</li><li>Spectral classifications are preliminary (Abstract).</li><li>Redness can come from youth, metallicity or cloud geometry, which are hard to separate (Sec. 5.3).</li></ul></div>
+      <div class="block verify"><h2>To verify</h2><ul><li>Eq. 1 is labelled M<sub>bol</sub> (usually absolute magnitude) but the text calls it the apparent bolometric magnitude (Sec. 4.2).</li></ul></div>
+      <div class="block"><h2>Concepts in this paper</h2><div class="chips"><a class="chip" href="../concepts/apparent-magnitude.html">Apparent magnitude</a><a class="chip" href="../concepts/euclid.html">Euclid</a><a class="chip" href="../concepts/exoplanet-atmosphere.html">Exoplanet atmosphere</a><a class="chip" href="../concepts/free-floating-planet.html">Free-floating planet</a><a class="chip" href="../concepts/ultracool-dwarf.html">Ultracool dwarf</a></div></div>
+      <div class="block"><h2>My seminar questions</h2><ol><li>How many of the 1,240 photometric candidates are expected to be contaminants?</li><li>Can Euclid colours alone separate youth from high metallicity?</li><li>Which of the reddest objects are best for JWST follow-up?</li></ol></div>
+    </main>
+    <footer>
+      <a class="crumb" href="../index.html">← back to home</a>
+      <span>added on 2026-11-15</span>
+    </footer>
+  </div>
+</body>
+</html>
