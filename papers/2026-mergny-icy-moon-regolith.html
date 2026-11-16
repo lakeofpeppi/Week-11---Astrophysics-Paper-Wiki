@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Physical Nature of Regolith on Icy Moons · Astro Paper Wiki</title>
+  <meta name="description" content="Icy moons like Europa change temperature far too easily for solid ice. This paper shows their top layer must be an ultra-fluffy powder of tiny ice grains, more than 80% empty space.">
+  <!-- preconnect first or the fonts pop in late and the page jumps -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- prefix is "" on the home page and "../" inside papers/ and concepts/, don't hardcode it -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="orbs" aria-hidden="true"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="../index.html">Astro Paper Wiki <span>/ notes from the seminar</span></a>
+      <nav>
+        <a href="../index.html#papers">Papers</a>
+        <a href="../index.html#concepts">Concepts</a>
+        <a href="../index.html#how">How it works</a>
+      </nav>
+    </header>
+
+    <main class="article">
+      <a class="crumb" href="../index.html#papers">← all papers</a>
+      <p class="kicker">paper · arXiv:2605.27048</p>
+      <h1>The Physical Nature of Regolith on Icy Moons</h1>
+      <p class="byline">Cyril Mergny et al. · <a href="https://arxiv.org/abs/2605.27048" target="_blank" rel="noopener">arXiv:2605.27048 ↗</a></p>
+      <div class="chips"><span class="chip tag theory">theory</span><span class="chip tag planetary">planetary</span></div>
+
+      <div class="tldr"><b>TL;DR</b>Icy moons like Europa change temperature far too easily for solid ice. This paper shows their top layer must be an ultra-fluffy powder of tiny ice grains, more than 80% empty space.</div>
+
+      <div class="block"><h2>Research question</h2><p>Every thermal measurement of the top few millimetres of icy moons finds a very low thermal inertia (9–20), while solid water ice should be about 2000. The authors asked what kind of surface, made mostly of ordinary crystalline water ice, could be that bad at holding heat, and what that means for future landers.</p></div>
+      <div class="block"><h2>Data &amp; tools</h2><ul><li>No new observations. Compiles published thermal inertia values for 10 icy moons (Table 1)</li><li>Those values came from Earth telescopes (eclipses), Galileo PPR, Cassini CIRS and ALMA (Table 1)</li><li>Heat-flow models for porous ice: through grain contacts, by thermal radiation across pores, and through gas (Sec. 2.1–2.4)</li><li>Contact conductivity models from the literature (Table 3); Gundlach2012 is used for the main results (Sec. 3.3)</li><li>Bodies: Europa, Ganymede, Callisto (Jupiter); Mimas, Enceladus, Tethys, Dione, Rhea, Iapetus (Saturn) (Table 1)</li></ul></div>
+      <div class="block"><h2>Method</h2><ol><li>Collect thermal inertia estimates for all icy moons and note how deep each observation probes (Sec. 1, Table 1).</li><li>Model how heat moves through a porous ice layer: grain-to-grain contact, radiation across the gaps, and gas (Sec. 2).</li><li>Find how large grains can be before radiation carries too much heat (Sec. 3.1–3.2, Figs. 5–6).</li><li>Combine contact and radiative heat flow into one formula, Γ(porosity, grain radius, temperature) (Eq. 22).</li><li>Map which porosity and grain-size combinations keep Γ below 15 at each temperature (Sec. 3.3, Fig. 7).</li><li>Compare with photometry, spectroscopy and microwave studies, and propose how the layering formed (Sec. 3.4, 4.2, Fig. 10).</li></ol></div>
+      <div class="block"><h2>Key results</h2>
+        <div class="table-wrap"><table><thead><tr><th>Result</th><th>Value</th><th>Where in paper</th></tr></thead><tbody><tr><td>Thermal inertia of the top millimetres of icy moons</td><td>9 to 20</td><td class="where">Abstract, Table 1</td></tr><tr><td>Thermal inertia of solid crystalline ice</td><td>~2000</td><td class="where">Sec. 1, Sec. 2.1.1</td></tr><tr><td>Needed at ≥ 100 K for Γ < 15</td><td>porosity > 80%, grain radius < 500 µm</td><td class="where">Sec. 3.3, Fig. 7</td></tr><tr><td>Ganymede and Callisto (above 150 K)</td><td>porosity > 90%, grain radius < 200 µm</td><td class="where">Sec. 3.3</td></tr><tr><td>Enceladus Tiger Stripes (warmest)</td><td>porosity > 92%, grain radius < 50 µm</td><td class="where">Sec. 3.3</td></tr><tr><td>Coldest case (50 K), loosest limit</td><td>porosity still ≥ 40%</td><td class="where">Sec. 3.3</td></tr><tr><td>Deeper layers (> 1 cm) on Galilean moons</td><td>Γ > 50, so the regolith compacts with depth</td><td class="where">Abstract, Sec. 4.2</td></tr><tr><td>Europa: Galileo PPR vs. ALMA band 6</td><td>Γ = 56 vs. Γ = 95</td><td class="where">Fig. 7</td></tr><tr><td>Lunar regolith porosity (for comparison)</td><td>~60%</td><td class="where">Sec. 4.2.2</td></tr></tbody></table></div>
+      </div>
+      <div class="block"><h2>Conclusions</h2><ul><li>The top layer of icy moons must be > 80% porous, with grains < 1 mm (Saturnian moons) and < 500 µm (Galilean moons).</li><li>This agrees with independent photometry, spectroscopy and microwave studies.</li><li>The Galilean moons' layering could come from deposition cover, impactor degradation or temperature-gradient metamorphism, or a mix.</li><li>These limits help future instruments (MAJIS on JUICE, MISE on Europa Clipper) and lander site selection.</li></ul></div>
+      <div class="block"><h2>Limitations</h2><ul><li>Assumes the published low thermal inertia values are correct, even though they are derived, not measured (Assumption 1, Sec. 4.4.1).</li><li>Assumes the regolith is thermally dominated by crystalline water ice; other compounds are ignored (Assumption 2).</li><li>Conductivity models assume perfectly spherical, same-size grains, and were tested with SiO₂, not ice (Assumption 3).</li><li>Uses one shared value, Γ<sub>LTIM</sub> = 15, for all moons (Sec. 4.4.1).</li><li>One thermal inertia value matches many porosity / grain-size pairs, so results are ranges, not single answers (Sec. 3.3).</li></ul></div>
+      <div class="block verify"><h2>To verify</h2><ul><li>The abstract gives grain radii “< 1 mm” in general, but Sec. 3.3 and 5 give < 500 µm for Galilean moons (< 200 µm for Ganymede and Callisto). Quote the limit for the right moon.</li><li>Europa's eclipse duration is written “∼ 2, 8 hours” in Sec. 4.2, probably a typo for 2.8 h.</li><li>Sec. 4.3.1 reads “Dione and (Ahrens et al. 2022)”, a word seems to be missing.</li></ul></div>
+      <div class="block"><h2>Concepts in this paper</h2><div class="chips"><a class="chip" href="../concepts/icy-moon.html">Icy moon</a><a class="chip" href="../concepts/porosity.html">Porosity</a><a class="chip" href="../concepts/regolith.html">Regolith</a><a class="chip" href="../concepts/moon.html">The Moon</a><a class="chip" href="../concepts/thermal-inertia.html">Thermal inertia</a><a class="chip" href="../concepts/thermal-skin-depth.html">Thermal skin depth</a></div></div>
+      <div class="block"><h2>My seminar questions</h2><ol><li>JWST needed a 35–40% lower albedo to fit Ganymede (Sec. 4.4.1). How confident are we that the low thermal inertia values themselves are right?</li><li>Which of the three layering scenarios could ESA's planned Enceladus lander test first?</li><li>How much would salts or amorphous ice relax the > 80% porosity requirement?</li></ol></div>
+    </main>
+    <footer>
+      <a class="crumb" href="../index.html">← back to home</a>
+      <span>added on 2026-11-15</span>
+    </footer>
+  </div>
+</body>
+</html>

@@ -42,6 +42,7 @@ wiki-index.md              catalog of every page, one line each (read this FIRST
 log.md                     history of every change, newest at the bottom
 CLAUDE.md                  this file
 README.md                  short public intro to the project
+.nojekyll                  empty file, tells GitHub Pages to skip Jekyll (never delete)
 ```
 
 Do not create any other folders without asking me.
@@ -85,7 +86,9 @@ Never change these values unless I ask:
 - **Clean:** lots of space, max content width 1080px, rounded corners 18px,
   no drop-shadow clutter, no emoji in headings.
 - **Field tags** (colored chips on paper cards): `observational`, `theory`,
-  `instrumentation`, `cosmology`, `satellites`. Add a new tag only if none fit.
+  `instrumentation`, `cosmology`, `satellites`, `planetary`. Add a new tag only if
+  none fit, and add it to this list. A tag without its own color in `style.css`
+  uses the default blue chip, which is fine.
 
 ---
 
@@ -135,7 +138,8 @@ When I say *"ingest this paper: <link or pdf>"*:
    - if this paper **disagrees** with a paper already listed → add/extend the
      "⚠ Conflicting findings" section on that concept page.
 5. Update `index.html`:
-   - add a paper card at the TOP of the papers grid (newest first)
+   - add a paper card to the papers grid, sorted by arXiv ID, newest first
+     (2609.xxxxx before 2605.xxxxx). Order is by publication, NOT by date added.
    - add new concepts to the concept index (keep A–Z order)
    - update the counters (papers / concepts)
 6. Update `wiki-index.md` (one line per new page) and add one line to `log.md`:
@@ -198,6 +202,8 @@ Then tell me: files created, files changed, anything flagged "to verify".
 - Never put API keys, passwords or personal info anywhere (the repo is public).
 - Never use frameworks or build tools — plain html + css only, so GitHub Pages
   works with zero setup.
+- Never delete `.nojekyll`. Without it GitHub Pages runs Jekyll on the repo and
+  the site can fail to build (this happened once, the site showed a 404).
 
 ---
 
@@ -206,3 +212,7 @@ Then tell me: files created, files changed, anything flagged "to verify".
 When something goes wrong, add a rule above and note it here.
 
 - 2026-11-15 — first version.
+- 2026-11-16 — site showed 404 after publishing → added `.nojekyll` + rule in section 11.
+- 2026-11-16 — while ingesting paper 3, "add card at the TOP (newest first)" was
+  ambiguous (newest published or newest added?) → section 7 now says sort by arXiv ID.
+- 2026-11-16 — paper 3 (planetary science) fit no field tag → added `planetary` to section 4.

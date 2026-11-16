@@ -7,3 +7,4 @@ PDFs are NOT stored in this repo (copyright), only arXiv links.
 |---|---|---|---|---|
 | 1 | The First Observations of Moonlit Satellites | Sarah E. Caddy et al. | [2609.07057](https://arxiv.org/abs/2609.07057) | `papers/2026-caddy-moonlit-satellites.html` |
 | 2 | Probing Dark Energy on the Moon | Alfredo Gurrola, Robert J. Scherrer, Oem Trivedi | [2603.04841](https://arxiv.org/abs/2603.04841) | `papers/2026-gurrola-dark-energy-moon.html` |
+| 3 | The Physical Nature of Regolith on Icy Moons | Cyril Mergny et al. | [2605.27048](https://arxiv.org/abs/2605.27048) | `papers/2026-mergny-icy-moon-regolith.html` |
