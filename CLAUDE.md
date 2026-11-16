@@ -43,6 +43,7 @@ log.md                     history of every change, newest at the bottom
 CLAUDE.md                  this file
 README.md                  short public intro to the project
 .nojekyll                  empty file, tells GitHub Pages to skip Jekyll (never delete)
+.gitignore                 keeps Mac's .DS_Store files out of the repo
 ```
 
 Do not create any other folders without asking me.
