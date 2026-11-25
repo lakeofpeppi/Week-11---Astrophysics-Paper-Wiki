@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A double debris disc around a white dwarf sculpted by two planetary bodies · Astro Paper Wiki</title>
+  <meta name="description" content="A dead star has two separate rings of gas around it instead of one, and each ring is probably being fed by its own crumbling planetary body.">
+  <!-- preconnect first or the fonts pop in late and the page jumps -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- prefix is "" on the home page and "../" inside papers/ and concepts/, don't hardcode it -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="orbs" aria-hidden="true"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="../index.html">Astro Paper Wiki <span>/ notes from the seminar</span></a>
+      <nav>
+        <a href="../index.html#papers">Papers</a>
+        <a href="../index.html#concepts">Concepts</a>
+        <a href="../index.html#how">How it works</a>
+      </nav>
+    </header>
+
+    <main class="article">
+      <a class="crumb" href="../index.html#papers">← all papers</a>
+      <p class="kicker">paper · arXiv:2610.37773</p>
+      <h1>A double debris disc around a white dwarf sculpted by two planetary bodies</h1>
+      <p class="byline">Nicola Pietro Gentile Fusillo et al. · <a href="https://arxiv.org/abs/2610.37773" target="_blank" rel="noopener">arXiv:2610.37773 ↗</a></p>
+      <div class="chips"><span class="chip tag observational">observational</span><span class="chip tag planetary">planetary</span></div>
+
+      <div class="tldr"><b>TL;DR</b>A dead star has two separate rings of gas around it instead of one, and each ring is probably being fed by its own crumbling planetary body.</div>
+
+      <div class="block"><h2>Research question</h2><p>Some white dwarfs are surrounded by gas from planetary rubble falling toward them. Every one found so far shows the same simple, single-disc signal. The authors found a white dwarf, WD J1328–1450, whose signal looks doubled, and asked what kind of gas structure (and what kind of rubble source) could produce it.</p></div>
+      <div class="block"><h2>Data &amp; tools</h2><ul><li>X-Shooter spectrograph on ESO's Very Large Telescope, 10 spectra from 2021 and 2023 (Methods, "X-Shooter observations and data reduction")</li><li>Gaia parallax and colours to pick the target (Methods)</li><li>Infrared survey photometry (VHS, WISE) to spot the dust (Methods)</li><li>REFLEX and MOLECFIT for data reduction; emcee (MCMC) for fitting; MCFOST for the dust model (Methods)</li></ul></div>
+      <div class="block"><h2>Method</h2><ol><li>Find the star with Gaia and flag it for extra infrared light (Methods).</li><li>Take and clean X-Shooter spectra (Methods).</li><li>Measure the star's temperature, mass and the metals in its atmosphere (Methods, "White Dwarf Parameters", "Photospheric Metal Abundances").</li><li>Model the Ca II, O I and Mg I emission lines as two flat, rotating rings with an MCMC fit (Methods, "Emission lines and double disc model").</li><li>Compare Mg emission between the two rings to test their composition (Methods, "Evidence of differentiated composition").</li><li>Model the infrared excess to describe the dust (Methods, "Infrared excess and circumstellar dust").</li></ol></div>
+      <div class="block"><h2>Key results</h2>
+        <div class="table-wrap"><table><thead><tr><th>Result</th><th>Value</th><th>Where in paper</th></tr></thead><tbody><tr><td>Previously known white dwarfs with gas discs</td><td>21, all with double-peaked lines</td><td class="where">Abstract</td></tr><tr><td>White dwarf temperature</td><td>T<sub>eff</sub> = 17,424 ± 567 K</td><td class="where">Main text, Fig. 1 paragraph; Ext. Data Table 1</td></tr><tr><td>White dwarf mass</td><td>0.47 ± 0.09 M<sub>☉</sub></td><td class="where">Main text; Ext. Data Table 1</td></tr><tr><td>Distance</td><td>≃500 pc (Gaia parallax 2.014 ± 0.292 mas)</td><td class="where">Supplementary Info; Suppl. Table 4</td></tr><tr><td>Inner gas ring</td><td>0.14 to 0.34 R<sub>☉</sub></td><td class="where">Abstract; Table 3</td></tr><tr><td>Outer gas ring</td><td>0.54 to 1.93 R<sub>☉</sub></td><td class="where">Abstract; Table 3</td></tr><tr><td>Disc inclination</td><td>77° (+9/−13)</td><td class="where">Table 3</td></tr><tr><td>Infrared excess from dust</td><td>τ = 2.7%, one of the brightest known</td><td class="where">Main text, after Fig. 3</td></tr><tr><td>Mg in the outer ring</td><td>significantly depleted vs the inner ring</td><td class="where">Main text, after Fig. 2; Methods "Evidence of differentiated composition"</td></tr><tr><td>Largest iron body that survives</td><td>45 km (inner disc, inner edge) up to 2,340 km (outer disc)</td><td class="where">Main text, tidal-disruption paragraphs</td></tr></tbody></table></div>
+      </div>
+      <div class="block"><h2>Conclusions</h2><ul><li>The emission lines have four peaks instead of two, best explained by two separate gas rings.</li><li>Each ring is probably fed by its own planetary body that is strong enough to survive close to the white dwarf.</li><li>The outer ring has much less magnesium, so the two rings likely come from different bodies or different layers of one body.</li><li>Current models of how debris gas forms and stays in place can't easily explain this system.</li></ul></div>
+      <div class="block"><h2>Limitations</h2><ul><li>The magnesium abundance comes from a single line that may be blended with emission, so it may be underestimated (Methods).</li><li>The O I and Mg I fits are low signal or degenerate, so the outer ring's edges are loosely constrained (Methods, Table 3).</li><li>The dust model is not unique: several setups fit the infrared data (Methods).</li><li>The lopsided shape of the inner ring is not explained (Methods).</li></ul></div>
+      <div class="block verify"><h2>To verify</h2><ul><li>The simple thin-disc dust fit gives an inclination of about 0°, but the gas rings are tilted about 77° (Methods vs Table 3). Different models, but the paper doesn't reconcile them.</li><li>The abstract says the bodies range "from a few km", but the size estimates in the main text start at 45 km.</li><li>One figure caption appears to name the star "WD J1338–1450" instead of J1328–1450 (Fig. 2). Check in the PDF.</li></ul></div>
+      <div class="block"><h2>Concepts in this paper</h2><div class="chips"><a class="chip" href="../concepts/debris-disc.html">Debris disc</a><a class="chip" href="../concepts/doppler-shift.html">Doppler shift</a><a class="chip" href="../concepts/infrared-excess.html">Infrared excess</a><a class="chip" href="../concepts/surface-brightness.html">Surface brightness</a><a class="chip" href="../concepts/tidal-disruption.html">Tidal disruption</a><a class="chip" href="../concepts/white-dwarf.html">White dwarf</a></div></div>
+      <div class="block"><h2>My seminar questions</h2><ol><li>Could the gap between the two rings be cleared by a third, unseen body instead of two separate feeding bodies?</li><li>How long can two rings stay separate before they spread into each other?</li><li>Would repeat spectra over years show the rings changing, like the precession seen in other gas discs?</li></ol></div>
+    </main>
+    <footer>
+      <a class="crumb" href="../index.html">← back to home</a>
+      <span>added on 2026-11-25</span>
+    </footer>
+  </div>
+</body>
+</html>

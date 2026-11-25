@@ -14,3 +14,4 @@ Format: `YYYY-MM-DD | action | file(s) | notes`
 2026-11-16 | ingest | papers/2026-lodieu-red-l-dwarfs.html | +2 concepts (ultracool-dwarf, euclid), 3 updated (apparent-magnitude, free-floating-planet, exoplanet-atmosphere); 1 item flagged to verify
 2026-11-16 | ingest | papers/2026-pike-ultracool-dwarf-aurora.html | +2 concepts (aurora, principal-component-analysis), 3 updated (ultracool-dwarf, jwst, m-dwarf); 2 items flagged to verify; no conflict added (different explanations for different objects, not a disagreement)
 2026-11-16 | rules | CLAUDE.md | added batch-ingest rule and "different explanation ≠ conflict" rule
+2026-11-25 | ingest | papers/2026-gentile-fusillo-double-debris-disc.html | +5 concepts (white-dwarf, debris-disc, tidal-disruption, doppler-shift, infrared-excess), 1 updated (surface-brightness: new "appears in" row + related link); 3 items flagged to verify

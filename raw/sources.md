@@ -12,3 +12,4 @@ PDFs are NOT stored in this repo (copyright), only arXiv links.
 | 5 | JWST Rocky Worlds DDT Observations of LTT 1445 A b and c in Secondary Eclipse Using MIRI/F1500W | Jegug Ih et al. | [2611.17300](https://arxiv.org/abs/2611.17300) | `papers/2026-ih-ltt1445-rocky-planets.html` |
 | 6 | Euclid DR1 Legacy Science on Ultracool Dwarfs: New URLD candidates in Euclid and SPHEREx | N. Lodieu et al. | [2611.17519](https://arxiv.org/abs/2611.17519) | `papers/2026-lodieu-red-l-dwarfs.html` |
 | 7 | JWST/NIRISS-SOSS Spectroscopic Variability and Auroral Modelling of Warm Ultracool Dwarf LSR J1835+3259 | Eleanor Pike et al. | [2611.18246](https://arxiv.org/abs/2611.18246) | `papers/2026-pike-ultracool-dwarf-aurora.html` |
+| 8 | A double debris disc around a white dwarf sculpted by two planetary bodies | Nicola Pietro Gentile Fusillo et al. | [2610.37773](https://arxiv.org/abs/2610.37773) | `papers/2026-gentile-fusillo-double-debris-disc.html` |
